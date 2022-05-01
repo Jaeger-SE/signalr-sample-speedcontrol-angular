@@ -1,0 +1,17 @@
+<div class="mb-2">
+    <div class="row">
+        <div class="col">
+            <button (click)="sendSpeed(report10())" class="me-2 p-button-success" pButton label="Report 10km/h"></button>
+            <button (click)="sendSpeed(report120())" class="me-2 p-button-danger" pButton label="Report 120km/h"></button>
+        </div>
+        <div class="col-auto">
+            <button (click)="clear()" pButton label="Clear"></button>
+        </div>
+    </div>
+</div>
+
+<div class="terminal">
+    <ul>
+        <li *ngFor="let log of logs">{{log}}</li>
+    </ul>
+</div>

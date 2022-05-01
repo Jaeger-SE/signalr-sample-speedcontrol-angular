@@ -1,0 +1,1 @@
+export type RadarType = "rue-neuve" | "rue-de-la-loi";

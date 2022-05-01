@@ -1,0 +1,9 @@
+<div class="mb-2 text-end">
+    <button (click)="clear()" pButton label="Clear"></button>
+</div>
+
+<div class="terminal">
+    <ul>
+        <li *ngFor="let log of logs">{{log}}</li>
+    </ul>
+</div>
